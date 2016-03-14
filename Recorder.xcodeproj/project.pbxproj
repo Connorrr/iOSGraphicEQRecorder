@@ -14,6 +14,8 @@
 		BF2F0D6F1C8FCB4300A5B1C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2F0D6D1C8FCB4300A5B1C7 /* LaunchScreen.storyboard */; };
 		BF2F0D7A1C8FCB4300A5B1C7 /* RecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F0D791C8FCB4300A5B1C7 /* RecorderTests.swift */; };
 		BF2F0D851C8FCB4300A5B1C7 /* RecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F0D841C8FCB4300A5B1C7 /* RecorderUITests.swift */; };
+		BF2F0D981C92919800A5B1C7 /* MyRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F0D971C92919800A5B1C7 /* MyRecorder.swift */; };
+		BF32377A1C968842009807FC /* CoreAudioMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3237791C968842009807FC /* CoreAudioMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BF2F0D801C8FCB4300A5B1C7 /* RecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2F0D841C8FCB4300A5B1C7 /* RecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderUITests.swift; sourceTree = "<group>"; };
 		BF2F0D861C8FCB4300A5B1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2F0D971C92919800A5B1C7 /* MyRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecorder.swift; sourceTree = "<group>"; };
+		BF3237791C968842009807FC /* CoreAudioMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAudioMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				BF2F0D641C8FCB4300A5B1C7 /* AppDelegate.swift */,
+				BF2F0D971C92919800A5B1C7 /* MyRecorder.swift */,
 				BF2F0D661C8FCB4300A5B1C7 /* ViewController.swift */,
+				BF3237791C968842009807FC /* CoreAudioMethods.swift */,
 				BF2F0D681C8FCB4300A5B1C7 /* Main.storyboard */,
 				BF2F0D6B1C8FCB4300A5B1C7 /* Assets.xcassets */,
 				BF2F0D6D1C8FCB4300A5B1C7 /* LaunchScreen.storyboard */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF32377A1C968842009807FC /* CoreAudioMethods.swift in Sources */,
+				BF2F0D981C92919800A5B1C7 /* MyRecorder.swift in Sources */,
 				BF2F0D671C8FCB4300A5B1C7 /* ViewController.swift in Sources */,
 				BF2F0D651C8FCB4300A5B1C7 /* AppDelegate.swift in Sources */,
 			);
@@ -485,6 +493,7 @@
 				BF2F0D8B1C8FCB4300A5B1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF2F0D8C1C8FCB4300A5B1C7 /* Build configuration list for PBXNativeTarget "RecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				BF2F0D8E1C8FCB4300A5B1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF2F0D8F1C8FCB4300A5B1C7 /* Build configuration list for PBXNativeTarget "RecorderUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				BF2F0D911C8FCB4300A5B1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
