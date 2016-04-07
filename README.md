@@ -1,5 +1,5 @@
 # iOSGraphicEQRecorder
-This application takes the iPhone mic input and performs a realtime FFT.  The output is displayed in a StackView subclass.
+This application takes the iPhone mic input and performs a realtime FFT.  The Graphic EQ is displayed in a StackView subclass and the audio is saved as a WAV file.
 
 # Features
  * CoreAudio Mic Input
