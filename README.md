@@ -18,7 +18,7 @@ Do you just want a schmick looking graphic equalizer that's light on resources?
 This should help out a bit.  I'm still fairly new to Core Audio so if you are interested in swapping stories, send me an email (Connor.reid87@gmail.com)
 
 # Credits
-Big Thanks to Mattt Thompson (http://mattt.me) for coding the FFT fucntion.
+Big Thanks to Mattt Thompson (http://mattt.me) for coding the FFT function.
 
 # Todo
 * Graphic EQ UI not updating quick enough (Audio Buffers and CADisplayLink aren't in sync).  IF ANYONE CAN HELP ME FIGURE THIS ONE OUT, PLEASE GET IN TOUCH.
