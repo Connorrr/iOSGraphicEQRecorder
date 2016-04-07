@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Recorder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="Recorder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,7 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K40-d3-hBt">
                                 <rect key="frame" x="291" y="289" width="18" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAB-tO-naW">
@@ -30,21 +31,56 @@
                                     <action selector="stopRecordingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEa-bp-L8Y"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwd-Dr-b8U" customClass="FFTView" customModule="Recorder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="510" width="600" height="90"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOk-j8-Sut" userLabel="left">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="90"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjv-lK-xqI" userLabel="middle">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="90"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rn7-3j-PbC" userLabel="right">
+                                        <rect key="frame" x="400" y="0.0" width="200" height="90"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Rn7-3j-PbC" firstAttribute="width" secondItem="XOk-j8-Sut" secondAttribute="width" id="G6l-sk-gpI"/>
+                                    <constraint firstItem="cjv-lK-xqI" firstAttribute="width" secondItem="XOk-j8-Sut" secondAttribute="width" id="hgW-fj-cj0"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4H-OY-iTy" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Wwd-Dr-b8U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0vJ-Md-aj4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wwd-Dr-b8U" secondAttribute="bottom" id="9jS-C3-Z0Y"/>
                             <constraint firstItem="K40-d3-hBt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HEF-ze-yqt"/>
+                            <constraint firstItem="E4H-OY-iTy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="KmX-iW-J3r"/>
                             <constraint firstItem="eAB-tO-naW" firstAttribute="centerX" secondItem="K40-d3-hBt" secondAttribute="centerX" id="VNY-mk-1mm"/>
+                            <constraint firstItem="E4H-OY-iTy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Z2I-4g-svq"/>
+                            <constraint firstItem="E4H-OY-iTy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="dlJ-CE-cPW"/>
+                            <constraint firstItem="Wwd-Dr-b8U" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="iGM-qH-C2n"/>
+                            <constraint firstItem="E4H-OY-iTy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kqO-fB-daq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eAB-tO-naW" secondAttribute="bottom" constant="130" id="mnI-6G-gFv"/>
+                            <constraint firstItem="Wwd-Dr-b8U" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="uJc-zR-1q1"/>
                             <constraint firstItem="K40-d3-hBt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ykF-ZD-aX1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fftView" destination="Wwd-Dr-b8U" id="gAd-fd-N22"/>
                         <outlet property="meter" destination="K40-d3-hBt" id="jQI-CR-Dtn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="455" y="249"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1D9CCF1CABA5DF0084064B /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D9CCE1CABA5DF0084064B /* UtilityFunctions.swift */; };
 		BF2F0D651C8FCB4300A5B1C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F0D641C8FCB4300A5B1C7 /* AppDelegate.swift */; };
 		BF2F0D671C8FCB4300A5B1C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F0D661C8FCB4300A5B1C7 /* ViewController.swift */; };
 		BF2F0D6A1C8FCB4300A5B1C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2F0D681C8FCB4300A5B1C7 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 		BF2F0D851C8FCB4300A5B1C7 /* RecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F0D841C8FCB4300A5B1C7 /* RecorderUITests.swift */; };
 		BF2F0D981C92919800A5B1C7 /* MyRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2F0D971C92919800A5B1C7 /* MyRecorder.swift */; };
 		BF32377A1C968842009807FC /* CoreAudioMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3237791C968842009807FC /* CoreAudioMethods.swift */; };
+		BF4118751CAE385C00094333 /* FFTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4118741CAE385C00094333 /* FFTView.swift */; };
+		BFC4D9161C9C17DA000BDF5E /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4D9151C9C17DA000BDF5E /* FFT.swift */; };
+		BFC4D9181C9C1D12000BDF5E /* Arithmatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4D9171C9C1D12000BDF5E /* Arithmatic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1D9CCE1CABA5DF0084064B /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		BF2F0D611C8FCB4300A5B1C7 /* Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2F0D641C8FCB4300A5B1C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2F0D661C8FCB4300A5B1C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		BF2F0D861C8FCB4300A5B1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2F0D971C92919800A5B1C7 /* MyRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecorder.swift; sourceTree = "<group>"; };
 		BF3237791C968842009807FC /* CoreAudioMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAudioMethods.swift; sourceTree = "<group>"; };
+		BF4118741CAE385C00094333 /* FFTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FFTView.swift; path = ../FFTView.swift; sourceTree = "<group>"; };
+		BFC4D9151C9C17DA000BDF5E /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		BFC4D9171C9C1D12000BDF5E /* Arithmatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arithmatic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,14 @@
 		BF2F0D631C8FCB4300A5B1C7 /* Recorder */ = {
 			isa = PBXGroup;
 			children = (
+				BF4118741CAE385C00094333 /* FFTView.swift */,
 				BF2F0D641C8FCB4300A5B1C7 /* AppDelegate.swift */,
 				BF2F0D971C92919800A5B1C7 /* MyRecorder.swift */,
 				BF2F0D661C8FCB4300A5B1C7 /* ViewController.swift */,
 				BF3237791C968842009807FC /* CoreAudioMethods.swift */,
+				BF1D9CCE1CABA5DF0084064B /* UtilityFunctions.swift */,
+				BFC4D9151C9C17DA000BDF5E /* FFT.swift */,
+				BFC4D9171C9C1D12000BDF5E /* Arithmatic.swift */,
 				BF2F0D681C8FCB4300A5B1C7 /* Main.storyboard */,
 				BF2F0D6B1C8FCB4300A5B1C7 /* Assets.xcassets */,
 				BF2F0D6D1C8FCB4300A5B1C7 /* LaunchScreen.storyboard */,
@@ -266,8 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF32377A1C968842009807FC /* CoreAudioMethods.swift in Sources */,
+				BFC4D9181C9C1D12000BDF5E /* Arithmatic.swift in Sources */,
 				BF2F0D981C92919800A5B1C7 /* MyRecorder.swift in Sources */,
+				BF4118751CAE385C00094333 /* FFTView.swift in Sources */,
 				BF2F0D671C8FCB4300A5B1C7 /* ViewController.swift in Sources */,
+				BFC4D9161C9C17DA000BDF5E /* FFT.swift in Sources */,
+				BF1D9CCF1CABA5DF0084064B /* UtilityFunctions.swift in Sources */,
 				BF2F0D651C8FCB4300A5B1C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +469,7 @@
 		BF2F0D901C8FCB4300A5B1C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: connor.reid87@gmail.com (FV7W9B6W8Y)";
 				INFOPLIST_FILE = RecorderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.griffith.RecorderUITests;
@@ -465,6 +482,7 @@
 		BF2F0D911C8FCB4300A5B1C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: connor.reid87@gmail.com (FV7W9B6W8Y)";
 				INFOPLIST_FILE = RecorderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.griffith.RecorderUITests;
