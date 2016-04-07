@@ -10,7 +10,7 @@ This application takes the iPhone mic input and performs a realtime FFT.  The ou
  * 1 Channel / Frame. 1 Frame / Packet
  * 16 Bit PCM
  
-#  "I've been looking through Core Audio gits all day.  Is there anything  in this for me?"
+#  "I've been looking through Core Audio repos all day.  Is there anything  in this for me?"
 Welll,  have you been wading through the torturous hell fire that is Core Audio?
 Are you trying to do this in Swift for some reason when 99% of the CA examples are in Obj-C?
 Do you just want a schmick looking graphic equalizer that's light on resources?
